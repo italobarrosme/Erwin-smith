@@ -5,6 +5,8 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Map: typeof import('./components/templates/map/index.vue')['default']
+    SideBarDetails: typeof import('./components/organisms/sideBarDetails/index.vue')['default']
+    SideBarTools: typeof import('./components/organisms/sideBarTools/index.vue')['default']
   }
 }
 

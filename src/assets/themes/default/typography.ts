@@ -1,6 +1,6 @@
 export default {
   fontFamily: {
-    sans: ['"Roboto"', "sans-serif"],
-    display: ['"Raleway"', "sans-serif"],
+    roboto: ['"Roboto"', "sans-serif"],
+    raleway: ['"Raleway"', "sans-serif"],
   },
 };
