@@ -1,39 +1,49 @@
 import { acceptHMRUpdate, defineStore } from "pinia";
 
-const TIME_TOGGLE = 600;
+const TIME_ALTERNATE = 600;
 
 type State = {
-  openMoadals: string[];
-  dataChangeComponent: string[];
-  isLoading: boolean;
+  choseModals: string[];
+  toggleLoading: boolean;
+  toggleSideBarDetails: boolean;
+  toggleSideBarTools: boolean;
 };
 
 export const useUIStore = defineStore("ui", {
   state: (): State => ({
-    openMoadals: [],
-    isLoading: false,
-    dataChangeComponent: [],
+    choseModals: [],
+    toggleLoading: false,
+    toggleSideBarDetails: false,
+    toggleSideBarTools: false,
   }),
   actions: {
-    toggleModal(modal: string) {
-      this.openMoadals = this.openMoadals.includes(modal)
-        ? this.openMoadals.filter((element) => element !== modal)
-        : [...this.openMoadals, modal];
+    alternateModal(modal: string) {
+      this.choseModals = this.choseModals.includes(modal)
+        ? this.choseModals.filter((element) => element !== modal)
+        : [...this.choseModals, modal];
     },
-    toggleLoading(loading: boolean) {
-      const toggle = loading ?? !this.isLoading;
+    alternateLoading(loading: boolean) {
+      const alternate = loading ?? !this.isLoading;
 
-      if (!toggle) {
+      if (!alternate) {
         return setTimeout(() => {
-          this.isLoading = toggle;
-        }, TIME_TOGGLE);
+          this.toggleLoading = alternate;
+        }, TIME_ALTERNATE);
       }
-      this.isLoading = toggle;
+      this.toggleLoading = alternate;
+    },
+    alternateSideBarDetails(sideBar: boolean) {
+      this.toggleSideBarDetails = sideBar;
+    },
+    alternateSideBarTools(sideBar: boolean) {
+      this.toggleSideBarTools = sideBar;
     },
   },
   getters: {
-    isModalOpen: (state) => (modal: string) =>
-      state.openMoadals.includes(modal),
+    isModal: (state) => (modal: string) => state.choseModals.includes(modal),
+    isLoading: (state) => state.toggleLoading,
+    isSideBarDetails: (state) => state.toggleSideBarDetails,
+    isSideBarTools: (state) => state.toggleSideBarTools,
   },
 });
 
