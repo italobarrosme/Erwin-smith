@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <router-view class="prose" />
+  <router-view />
 </template>
 
 <style lang="scss">

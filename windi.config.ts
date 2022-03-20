@@ -23,7 +23,7 @@ export default defineConfig({
   },
 
   plugins: [
-    require("windicss/plugin/typography")(),
+    require("windicss/plugin/typography")({}),
     plugin(({ addComponents }) => {
       addComponents({
         ".min-page": {

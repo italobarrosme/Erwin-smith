@@ -12,8 +12,8 @@ export default {
   typography: {
     DEFAULT: {
       css: {
-        maxWidth: "65ch",
         color: "inherit",
+        maxWidth: "100%",
         a: {
           color: "inherit",
           opacity: 0.75,
