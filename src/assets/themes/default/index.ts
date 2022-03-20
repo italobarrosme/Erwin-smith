@@ -1,4 +1,4 @@
 import { colors } from "./colors";
-import typos from "./typography";
+import typography from "./typography";
 
-export { colors, typos };
+export { colors, typography };

@@ -51,7 +51,7 @@ export async function renderMap() {
       cities
         .addTo(mapAPI)
         .on("click", (event: any) => {
-          mapAPI.panTo(event.latlng);
+          mapAPI.setView(event.latlng, mapAPI.getZoom() + 2);
 
           L.popup()
             .setLatLng(event.latlng)

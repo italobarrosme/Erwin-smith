@@ -7,7 +7,8 @@ meta:
 <script setup lang="ts"></script>
 
 <template>
-  <Map></Map>
+  <Map> </Map>
+  <SidebarRight></SidebarRight>
 </template>
 
 <style lang="scss"></style>

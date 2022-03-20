@@ -12,8 +12,7 @@ onBeforeMount(async () => {
 
 <style lang="scss">
 #map-default {
-  width: 100%;
-  height: 100%;
+  @apply relative w-full h-full;
 }
 .leaflet-popup-content {
   @apply p-0 flex justify-start items-center h-auto min-w-[124px];

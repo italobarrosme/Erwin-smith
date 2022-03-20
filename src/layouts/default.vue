@@ -9,6 +9,6 @@
 
 <style lang="scss" scoped>
 .default-layout {
-  @apply w-screen h-screen bg-yellow-500;
+  @apply w-screen h-screen bg-transparent overflow-hidden;
 }
 </style>
