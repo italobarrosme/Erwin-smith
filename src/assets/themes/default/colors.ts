@@ -1,19 +1,17 @@
 export const colors = {
   brand: {
     primary: {
-      lightest: "#98D7AA",
-      light: "#46BC6E",
-      medium: "#00A14B",
-      dark: "#007E34",
-      darkest: "#005F20",
+      lightest: "#F9F9FF",
+      light: "#E5E3FF",
+      medium: "#6357FF",
+      dark: "#37318F",
     },
 
     secondary: {
-      lightest: "#AFDDDC",
-      light: "#7AC8C5",
-      medium: "#00A19C",
-      dark: "#00847C",
-      darkest: "#00746B",
+      lightest: "#83B8FE",
+      light: "#056CF2",
+      medium: "#1857B5",
+      dark: "#113E82",
     },
   },
 
@@ -23,7 +21,6 @@ export const colors = {
       light: "#FBFBFB",
       medium: "#F1F1F1",
       dark: "#C2C2C2",
-      darkest: "#A4A4A4",
     },
 
     darkgrey: {
@@ -31,7 +28,6 @@ export const colors = {
       light: "#7A7A7A",
       medium: "#666666",
       dark: "#474747",
-      darkest: "#252525",
     },
   },
 
