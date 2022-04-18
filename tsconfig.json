@@ -5,6 +5,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "module": "ESNext",
+    "noImplicitAny": false,
     "target": "es2016",
     "lib": ["DOM", "ESNext"],
     "strict": true,

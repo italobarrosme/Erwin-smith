@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { renderMap } from "@/composables/useMap";
+// import { renderMapLeaflet } from "@/composables/useMapLeaflet";
+import { renderMapDeckGL } from "@/composables/useMapDeckGL";
 
-onBeforeMount(async () => {
-  renderMap();
+onMounted(async () => {
+  // renderMapLeaflet();
+  await renderMapDeckGL();
 });
 </script>
 
 <template>
-  <main id="map-default"></main>
+  <div id="map-default"></div>
 </template>
 
 <style lang="scss">
@@ -28,7 +30,7 @@ onBeforeMount(async () => {
     list-style-type: none;
     > li {
       > span {
-        @apply text-brand-secondary-darkest;
+        @apply text-brand-secondary-dark;
         font-weight: 700;
       }
       @apply py-1;
