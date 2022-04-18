@@ -29,6 +29,7 @@
     "@deck.gl/layers": "^8.7.5",
     "@deck.gl/mapbox": "^8.7.5",
     "@iconify/json": "^1.1.432",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.0",
     "@turf/turf": "^6.5.0",
     "@types/node": "^17.0.7",
     "@vitejs/plugin-vue": "^2.2.0",

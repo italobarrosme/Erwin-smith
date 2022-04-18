@@ -3,6 +3,10 @@
     <h1>sidebar-right</h1>
     <h2>Informacoes da interecao do mapa aqui</h2>
     <p>Texto normal sobre</p>
+
+    <div>
+      <SideBarTools></SideBarTools>
+    </div>
   </section>
 </template>
 <style scoped lang="scss">

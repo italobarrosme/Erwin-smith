@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    InputMapBoxGeocoder: typeof import('./components/molecules/inputMapBoxGeocoder/index.vue')['default']
     Map: typeof import('./components/templates/map/index.vue')['default']
     SideBarDetails: typeof import('./components/organisms/sideBarDetails/index.vue')['default']
     SidebarRight: typeof import('./components/templates/sidebar-right/index.vue')['default']

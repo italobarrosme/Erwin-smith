@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { renderMapLeaflet } from "@/composables/useMapLeaflet";
-import { renderMapDeckGL } from "@/composables/useMapDeckGL";
+import { renderMapDeckGL } from "@/composables/useMapDeckGLWithMapbox";
 
 onMounted(async () => {
   // renderMapLeaflet();
